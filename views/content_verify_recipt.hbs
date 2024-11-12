@@ -1,9 +1,10 @@
 <!-- upload_success.html -->
-<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Verification</title>
     <style>
         body {
@@ -15,15 +16,18 @@
 
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin:
+                20px auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 10px;
+            border-radius:
+                10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         table {
-            width: 100%;
+            width:
+                100%;
         }
 
         table td {
@@ -52,6 +56,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Content Verification Receipt</h1>
@@ -59,20 +64,21 @@
         <table>
             <tr>
                 <td>Author:</td>
-                <td>{{ username }}</td>
+                <td>{{username}}</td>
             </tr>
             <tr>
                 <td>Timestamp:</td>
-                <td>{{ timestamp }}</td>
+                <td>{{timestamp}}</td>
             </tr>
             <tr>
                 <td>Content Hash:</td>
-                <td>{{ contentHash }}</td>
+                <td>{{contentHash}}</td>
             </tr>
         </table>
-        
-          <p>Go to Home Page</p>
-        <a href="/Home" class="logout-btn">Home</a>
+
+        <p>Go to Home Page</p>
+        <a href="/" class="logout-btn">Home</a>
     </div>
 </body>
+
 </html>
