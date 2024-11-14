@@ -36,21 +36,21 @@
 </head>
 <body>
 <div class="container">
-  <h2>Content Modification Receipt</h2>
+  <h2>Transfer Receipt</h2>
   <div class="card receipt-card">
     <div class="card-body">
       <div class="mb-3">
         <h3>Modification Details</h3>
-        <p><i class="fas fa-check-circle receipt-icon text-success"></i> Content modified successfully!</p>
+        <p><i class="fas fa-check-circle receipt-icon text-success"></i> Ownership successfully!</p>
       </div>
       <div class="mb-3">
         <h4>Details:</h4>
-        <p>Hash Key: {{ hashKey }}</p>
+        {{!-- <p>Hash Key: {{ hashKey }}</p> --}}
         <p>New Hash Key: {{ newHashKey }}</p>
         <p>Username: {{ username }}</p>
         <p>Timestamp: {{ timestamp }}</p>
       </div>
-      <div class="mb-3">
+      {{!-- <div class="mb-3">
         <h4>Ownership History:</h4>
         {{#each ownershipHistory}}
           <div class="history-item">
@@ -58,7 +58,7 @@
             <p>Owner: {{ this.username }}</p>
           </div>
         {{/each}}
-      </div>
+      </div> --}}
       <a href="/" class="btn btn-primary">Back to Home</a>
     </div>
   </div>
