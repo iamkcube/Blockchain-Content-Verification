@@ -1,0 +1,78 @@
+<!-- upload_success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table td:first-child {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .logout-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .logout-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Content Verification Receipt</h1>
+        <p>This is Verified Content</p>
+        <table>
+            <tr>
+                <td>Author:</td>
+                <td>{{ username }}</td>
+            </tr>
+            <tr>
+                <td>Timestamp:</td>
+                <td>{{ timestamp }}</td>
+            </tr>
+            <tr>
+                <td>Content Hash:</td>
+                <td>{{ contentHash }}</td>
+            </tr>
+        </table>
+        
+          <p>Go to Home Page</p>
+        <a href="/Home" class="logout-btn">Home</a>
+    </div>
+</body>
+</html>
